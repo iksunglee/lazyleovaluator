@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-
+import time as time
 
 # 클럽 레어 관련 설명이 들어가야 함. 
 st.title('Welcome to the LAZY LEO RARITY CALCULATOR!')
