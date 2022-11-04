@@ -5,11 +5,11 @@ import time as time
 # 클럽 레어 관련 설명이 들어가야 함. 
 st.title('Welcome to the LAZY LEO RARITY CALCULATOR!')
 # 소개 링크
-st.markdown("About Lazy Leo Club Project: [link](https://lazyleoclub.clubrare.xyz)")
+st.markdown("**About Lazy Leo Club Project:** [link](https://lazyleoclub.clubrare.xyz)")
 # 계산 기준
-st.markdown("About the Rarity Standard: [link](https://lazyleoclub.clubrare.xyz/the-standard-for-llc-rarity-tier)")
+st.markdown("**About the Rarity Standard:** [link](https://lazyleoclub.clubrare.xyz/the-standard-for-llc-rarity-tier)")
 # 구매 링크
-st.markdown("Where to Adopt-a-Leo: [link](https://opensea.io/collection/thelazyleoclub)")
+st.markdown("**Where to Adopt-a-Leo:** [link](https://opensea.io/collection/thelazyleoclub)")
 
 # 모든 기준 로딩 실행
 Back_set = pd.read_csv('Background.csv')
@@ -69,4 +69,4 @@ if st.button ('Cacluate My Leo!'):
 
 
 st.text('From your Lazy Leo Club Korea Holder Community!')
-st.markdown('Errors. report it in github')
+st.markdown('**Errors?** report it in github [link](https://github.com/iksunglee/lazyleovaluator)')
