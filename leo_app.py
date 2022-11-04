@@ -5,7 +5,7 @@ import time as time
 # 클럽 레어 관련 설명이 들어가야 함. 
 st.title('Welcome to the LAZY LEO RARITY CALCULATOR!')
 # 소개 링크
-st.markdown("**About Lazy Leo Club Project:** [link](https://lazyleoclub.clubrare.xyz)")
+st.markdown("**About Lazy Leo Club Project:** [link](https://www.lazyleoclub.xyz/)")
 # 계산 기준
 st.markdown("**About the Rarity Standard:** [link](https://lazyleoclub.clubrare.xyz/the-standard-for-llc-rarity-tier)")
 # 구매 링크
