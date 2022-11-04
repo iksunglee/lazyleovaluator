@@ -43,7 +43,7 @@ mouth = st.selectbox('Mouth',['none','Base Smile','Cute Smile','Stressed','Smile
 t5 = mouth_set.loc[mouth_set['Trait'] == mouth,'Score'].iloc[0] 
 
 # 6. get input attributes drop down - Mane
-mane = st.selectbox('Mane',['none','Brown','Light Blue','White','Red','Rainbow','Wolverine Light Brown','Cruelia','Wolverine Brown','Wolverine Orange','Snoop Dog','Wolverine Black','Wolverine Blue','Papaya','Pharaoh','Davy Jones','Rick','Gold'])
+mane = st.selectbox('Mane',['none','Brown','Light Blue','White','Red','Rainbow','Wolverine Light Brown','Cruella','Wolverine Brown','Wolverine Orange','Snoop Dog','Wolverine Black','Wolverine Blue','Papaya','Pharaoh','Davy Jones','Rick','Gold'])
 t6 = mane_set.loc[mane_set['Trait'] == mane,'Score'].iloc[0] 
 
 # 7. get input attributes drop down - Eye Accessories
