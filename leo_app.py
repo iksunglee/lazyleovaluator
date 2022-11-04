@@ -60,8 +60,9 @@ t9 = head_acc_set.loc(head_acc_set['Trait'] == background,'Score').iloc[0]
 
 # 결과 계산 버튼
 if st.button ('Cacluate My Leo!'):
-    with st.spinner(text='calculating...')
+    with st.spinner(text='calculating...'):
         time.sleep(4)
         st.success('Done!')
     total_score = int(t1)+int(t2)+int(t3)+int(t4)+int(t5)+int(t6)+int(t7)+int(t8)+int(t9)
-    st.text('congrats your total score is:'+str(total_score)
+    st.text('congrats your total score is:')
+    st.header(str(total_score))
