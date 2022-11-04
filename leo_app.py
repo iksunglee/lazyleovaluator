@@ -24,35 +24,44 @@ head_acc_set = pd.read_csv('Head_Accessories.csv')
 
 # 1. get input attributes drop down - backgrounds 
 background = st.selectbox('Backgrounds',['none','Light Green','Light Blue','Orange','Rose','brown','Dark Green','Pink','Purple','Dark Blue','Maroon','Khaki','Blue','Light Gradient','Blue Electric','Green Yellow Gradient','Rose Orange Gradient','Green Purple Gradient', 'Gold Electric'])
-
+t1 = Back_set.loc(Back_set['Trait'] == background,'Score').iloc[0] 
 
 # 2. get input attributes drop down - body
 body = st.selectbox('Body',['none','Yellow','White','Green','Red','Light Green','Black','Ben Rocks','Flowers','Hell Boy','Skitties','Dalmatian','Thanos','Mumia','Panda','Gold'])
+t2 = clothes_set.loc(clothes_set['Trait'] == background,'Score').iloc[0] 
 
 # 3. get input attributes drop down - Clothes
 clothes =st.selectbox('Clothes',['none','Green Tshirt','Black Shirt','LightGreen Tshirt','Funny T-shirt','Bloody Shirt','Palmas Tshirt','Lion Tshirt','Purple Hudi','White Hudi','White Clothes','Orange Hudi','Back Hudi','Red Hudi','Green Hudi','LightBlue Hudi','Eth Shirt','Street Wear','I Love NY','Shirt With Chain','Rainbow Hudi','Summer','Track suit','Coat','Green LLC','Striped Longsleeve','LL Jacket','Tux','Brown Fashion','Formal Look','Black Fashion','Winter Suit','Safety Ballons','Red Striped Longsleeve','Superman','Prisoner','Safety Jacket',' Diving Suit'])
+t3 = Back_set.loc(Back_set['Trait'] == background,'Score').iloc[0] 
 
 # 4. get input attributes drop down - Eyes
 eyes = st.selectbox('Eyes',['none','Neutral','Timid','Shy','Suspicious','Surprised','Creepy','Crying','Enthusiastic','Sad','Worried','Savage','Angry','Tear','Cute'])
+t4 = eyes_set.loc(eyes_set['Trait'] == background,'Score').iloc[0] 
 
 # 5. get input attributes drop down - Mouth
 mouth = st.selectbox('Mouth',['none','Base Smile','Cute Smile','Stressed','Smile','Vampire','Cute with nose','Base With Tooth','Surprised','Hunter','Mouth Opened','Ooops','With Tongue','Happy','Sad','Shy Expression'])
+t5 = mouth_set.loc(mouth_set['Trait'] == background,'Score').iloc[0] 
 
 # 6. get input attributes drop down - Mane
 mane = st.selectbox('Mane',['none','Brown','Light Blue','White','Red','Rainbow','Wolverine Light Brown','Cruelia','Wolverine Brown','Wolverine Orange','Snoop Dog','Wolverine Black','Wolverine Blue','Papaya','Pharaoh','Davy Jones','Rick','Gold'])
+t6 = mane_set.loc(mane_set['Trait'] == background,'Score').iloc[0] 
 
 # 7. get input attributes drop down - Eye Accessories
 eye_acc = st.selectbox('Eye Accessories',['none','Empty','Rayban Blue','Rayban White','Round Green','Meme','Round Blue','Button','Rayban Black','Round','Classic Round','Harry Potter','Monocle','Fashion Pink','Thin','Cyborg','Pink Round','Fashion','Fashion Orange','Fashion Green'])
+t7 = eye_acc_set.loc(eye_acc_set['Trait'] == background,'Score').iloc[0] 
 
 # 8. get input attributes drop down - Face Accessories
 face_acc = st.selectbox('Face Accessories',['none','Empty','Cyber Mask','Cyber Mask Dark','Doodle Mask','Gas Mask','Venom','Squid Mask','Cyber','Gum','Cyber Mask Gold'])
+t8 = face_acc_set.loc(face_acc_set['Trait'] == background,'Score').iloc[0] 
 
 # 9. get input attributes drop down - Head Accessories
 head_acc = st.selectbox('Head Accessories',['none','Panama Brown','Panama Red','Panama White','Airpods Max White','White Icecream','Airpods Max Red','Cap','Chaplin Green','Airpods Max Grey','Panama Blue','Halo','Airpods Max Blue','Ice cream','Saffari','Airpods Max Black','Chaplin','Panama Purple','Black Hat','TV','Unicorn','Panama Orange','Princess','Blue Fire','Pilot Hat','King','BrainDrain'])
+t9 = head_acc_set.loc(head_acc_set['Trait'] == background,'Score').iloc[0] 
 
 # 결과 계산 버튼
-st.button ('Cacluate My Leo!')
-
-# 결과 점수
-
-# 티어 등급 공유
+if st.button ('Cacluate My Leo!'):
+    with st.spinner(text='calculating...')
+        time.sleep(4)
+        st.success('Done!')
+    total_score = int(t1)+int(t2)+int(t3)+int(t4)+int(t5)+int(t6)+int(t7)+int(t8)+int(t9)
+    st.text('congrats your total score is:'+str(total_score)
