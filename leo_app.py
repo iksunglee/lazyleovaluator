@@ -9,7 +9,7 @@ st.text("About Lazy Leo Club Project: [link](https://lazyleoclub.clubrare.xyz)")
 # 계산 기준
 st.text("About the Rarity Standard: [link](https://lazyleoclub.clubrare.xyz/the-standard-for-llc-rarity-tier)")
 # 구매 링크
-st.text("Where to Adopt-a-Leo: [link]()")
+st.text("Where to Adopt-a-Leo: [link](https://opensea.io/collection/thelazyleoclub)")
 
 # 모든 기준 로딩 실행
 Back_set = pd.read_csv('Background.csv')
