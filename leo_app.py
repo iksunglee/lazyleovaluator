@@ -23,12 +23,18 @@ face_acc_set = pd.read_csv('Face_Accessories.csv')
 head_acc_set = pd.read_csv('Head_Accessories.csv')
 
 # 1. get input attributes drop down - backgrounds 
-background = st.selectbox('Backgrounds',['none','Light Green','Light Blue','Orange','Rose','brown','Dark Green','Pink','Purple','Dark Blue','Maroon','Khaki','Blue','Light Gradient','Blue Electric','Green Yellow Gradient','Rose Orange Gradient','Green Purple Gradient', 'Gold Electric'])
+background = st.selectbox('Backgrounds',['none','Light Green','Light Blue','Orange','Rose','Brown','Dark Green','Pink','Purple','Dark Blue','Maroon','Khaki','Blue','Light Gradient','Blue Electric','Green Yellow Gradient','Rose Orange Gradient','Green Purple Gradient', 'Gold Electric'])
 t1 = Back_set.loc[Back_set['Trait'] == background ,'Score'].iloc[0]
+t1p = Back_set.loc[Back_set['Trait']== background, 'Percentage'].iloc[0]
+st.text('score:'+str(t1))
+st.text('percentage:' + str(t1p))
 
 # 2. get input attributes drop down - body
 body = st.selectbox('Body',['none','Yellow','White','Green','Red','Light Green','Black','Ben Rocks','Flowers','Hell Boy','Skitties','Dalmatian','Thanos','Mumia','Panda','Gold'])
 t2 = Body_set.loc[Body_set['Trait'] == body ,'Score'].iloc[0] 
+t2p = Body_set.loc[Body_set['Trait']== body, 'Percentage'].iloc[0]
+st.text('score:'+str(t1))
+st.text('percentage:' + str(t2p))
 
 # 3. get input attributes drop down - Clothes
 clothes =st.selectbox('Clothes',['none','Green Tshirt','Black Shirt','LightGreen Tshirt','Funny T-shirt','Bloody Shirt','Palmas Tshirt','Lion Tshirt','Purple Hudi','White Hudi','White Clothes','Orange Hudi','Back Hudi','Red Hudi','Green Hudi','LightBlue Hudi','Eth Shirt','Street Wear','I Love NY','Shirt With Chain','Rainbow Hudi','Summer','Track suit','Coat','Green LLC','Striped Longsleeve','LL Jacket','Tux','Brown Fashion','Formal Look','Black Fashion','Winter Suit','Safety Ballons','Red Striped Longsleeve','Superman','Prisoner','Safety Jacket',' Diving Suit'])
