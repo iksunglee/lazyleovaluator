@@ -44,14 +44,14 @@ st.text('score:'+str(t3))
 st.text('percentage:'+ str(t3p))
 
 # # 4. get input attributes drop down - Eyes
-eyes = st.selectbox('Eyes',['none','Neutral','Timid','Shy','Suspicious','Surprised','Creepy','Crying','Enthusiastic','Sad','Worried','Savage','Angry','Tear','Cute'])
+eyes = st.selectbox('Eyes',['none','N/A','Neutral','Timid','Shy','Suspicious','Surprised','Creepy','Crying','Enthusiastic','Sad','Worried','Savage','Angry','Tear','Cute'])
 t4 = eyes_set.loc[eyes_set['Trait'] == eyes,'Score'].iloc[0] 
 t4p = eyes_set.loc[eyes_set['Trait'] == eyes,'Percentage'].iloc[0] 
 st.text('score:'+str(t4))
 st.text('percentage:'+ str(t4p))
 
 # 5. get input attributes drop down - Mouth
-mouth = st.selectbox('Mouth',['none','Base Smile','Cute Smile','Stressed','Smile','Vampire','Cute with nose','Base With Tooth','Surprised','Hunter','Mouth Opened','Ooops','With Tongue','Happy','Sad','Shy Expression'])
+mouth = st.selectbox('Mouth',['none','N/A','Base Smile','Cute Smile','Stressed','Smile','Vampire','Cute with nose','Base With Tooth','Surprised','Hunter','Mouth Opened','Ooops','With Tongue','Happy','Sad','Shy Expression'])
 t5 = mouth_set.loc[mouth_set['Trait'] == mouth,'Score'].iloc[0] 
 t5p = mouth_set.loc[mouth_set['Trait'] == mouth,'Percentage'].iloc[0]
 st.text('score:'+str(t5))
@@ -72,14 +72,14 @@ st.text('score:'+str(t7))
 st.text('percentage:'+ str(t7p))
 
 # 8. get input attributes drop down - Face Accessories
-face_acc = st.selectbox('Face Accessories',['none','Empty','Cyber Mask','Cyber Mask Dark','Doodle Mask','Gas Mask','Venom','Squid Mask','Cyber','Gum','Cyber Mask Gold'])
+face_acc = st.selectbox('Face Accessories',['none','N/A','Empty','Cyber Mask','Cyber Mask Dark','Doodle Mask','Gas Mask','Venom','Squid Mask','Cyber','Gum','Cyber Mask Gold'])
 t8 = face_acc_set.loc[face_acc_set['Trait'] == face_acc,'Score'].iloc[0] 
 t8p = face_acc_set.loc[face_acc_set['Trait'] == face_acc,'Percentage'].iloc[0] 
 st.text('score:'+str(t8))
 st.text('percentage:'+ str(t8p))
 
 # 9. get input attributes drop down - Head Accessories
-head_acc = st.selectbox('Head Accessories',['none','Panama Brown','Panama Red','Panama White','Airpods Max White','White Icecream','Airpods Max Red','Cap','Chaplin Green','Airpods Max Grey','Panama Blue','Halo','Airpods Max Blue','Ice cream','Saffari','Airpods Max Black','Chaplin','Panama Purple','Black Hat','TV','Unicorn','Panama Orange','Princess','Blue Fire','Pilot Hat','King','BrainDrain'])
+head_acc = st.selectbox('Head Accessories',['none','N/A','Panama Brown','Panama Red','Panama White','Airpods Max White','White Icecream','Airpods Max Red','Cap','Chaplin Green','Airpods Max Grey','Panama Blue','Halo','Airpods Max Blue','Ice cream','Saffari','Airpods Max Black','Chaplin','Panama Purple','Black Hat','TV','Unicorn','Panama Orange','Princess','Blue Fire','Pilot Hat','King','BrainDrain'])
 t9 = head_acc_set.loc[head_acc_set['Trait'] == head_acc,'Score'].iloc[0]
 t9p = head_acc_set.loc[head_acc_set['Trait'] == head_acc,'Percentage'].iloc[0]
 st.text('score:'+str(t9))
