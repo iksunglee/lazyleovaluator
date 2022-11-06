@@ -33,7 +33,7 @@ st.text('percentage:' + str(t1p))
 body = st.selectbox('Body',['none','Yellow','White','Green','Red','Light Green','Black','Ben Rocks','Flowers','Hell Boy','Skitties','Dalmatian','Thanos','Mumia','Panda','Gold'])
 t2 = Body_set.loc[Body_set['Trait'] == body ,'Score'].iloc[0] 
 t2p = Body_set.loc[Body_set['Trait']== body, 'Percentage'].iloc[0]
-st.text('score:'+str(t1))
+st.text('score:'+str(t2))
 st.text('percentage:' + str(t2p))
 
 # 3. get input attributes drop down - Clothes
