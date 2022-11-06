@@ -34,11 +34,14 @@ body = st.selectbox('Body',['none','Yellow','White','Green','Red','Light Green',
 t2 = Body_set.loc[Body_set['Trait'] == body ,'Score'].iloc[0] 
 t2p = Body_set.loc[Body_set['Trait']== body, 'Percentage'].iloc[0]
 st.text('score:'+str(t2))
-st.text('percentage:' + str(t2p))
+st.text('percentage:'+ str(t2p))
 
 # 3. get input attributes drop down - Clothes
 clothes =st.selectbox('Clothes',['none','Green Tshirt','Black Shirt','LightGreen Tshirt','Funny T-shirt','Bloody Shirt','Palmas Tshirt','Lion Tshirt','Purple Hudi','White Hudi','White Clothes','Orange Hudi','Back Hudi','Red Hudi','Green Hudi','LightBlue Hudi','Eth Shirt','Street Wear','I Love NY','Shirt With Chain','Rainbow Hudi','Summer','Track suit','Coat','Green LLC','Striped Longsleeve','LL Jacket','Tux','Brown Fashion','Formal Look','Black Fashion','Winter Suit','Safety Ballons','Red Striped Longsleeve','Superman','Prisoner','Safety Jacket',' Diving Suit'])
 t3 = clothes_set.loc[clothes_set['Trait'] == clothes,'Score'].iloc[0] 
+t3p = clothes_set.loc[clothes_set['Trait'] == clothes,'Percentage'].iloc[0] 
+st.text('score:'+str(t3))
+st.text('percentage:'+ str(t3p))
 
 # # 4. get input attributes drop down - Eyes
 eyes = st.selectbox('Eyes',['none','Neutral','Timid','Shy','Suspicious','Surprised','Creepy','Crying','Enthusiastic','Sad','Worried','Savage','Angry','Tear','Cute'])
